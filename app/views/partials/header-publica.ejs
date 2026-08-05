@@ -1,0 +1,29 @@
+<header>
+
+    <% if(!perfil){ %>
+        <%- include("../partials/visitante") -%>
+      
+    <%}else{ %>
+        <%- include("../partials/user-logado") -%>
+    <%}%>
+                        <nav>
+                            <div id="painel-menu">
+                                <input type="checkbox">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <ul>
+                                    <li><a href="">Acomodação</a></li>
+                                    <li><a href="">Lazer</a></li>
+                                    <li><a href="">Gastronomia</a></li>
+                                    <li><a href="">Reservas</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+        </div>
+
+    <% if(!perfil ){ %>
+            <%- include("../partials/slogan-img-header") -%>
+    <%}%>
+
+</header>

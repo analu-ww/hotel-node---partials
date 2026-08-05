@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <!--metatag viewport para o Responsivo -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel IceTown</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+
+    <div id=container>
+
+        <!-- include header -->
+
+<%- include("../partials/header-publica") -%>
+
+        <main>
+            <div class="login-page">
+
+                <div class="form-cadastro">
+                    <a href="/"><span id="fechar">&times;</span></a>
+                    <form action="/cadastro" method="post" class="login-form">
+                        <h2>Cadastro</h2>
+                        <input type="text" name="nome" id="nome" placeholder="Seu nome">
+                        <input type="text" name="email" id="email" placeholder="Seu e-mail">
+                        <input type="password" name="senha" id="senha" placeholder="Sua senha">
+                        <input type="password" name="cSenha" id="cSsenha" placeholder="Confime a senha">
+                        <button type="submit">Cadastrar</button>
+                        <p class="message">Já é cadastrado? <a href="/login">Entre</a></p>
+                    </form>
+                </div>
+            </div>
+        </main>
+
+<%- include("../partials/footer-publica") -%>
+
+    </div>
+
+</body>
+
+</html>

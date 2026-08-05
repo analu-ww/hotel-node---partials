@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+</head>
+
+<body>
+    <!-- <div class="navbar navbar-inverse navbar-fixed-top"> -->
+            <%- include("../partials/header-adm") -%>
+
+
+    <div class="container body-content">
+        <h2>Lista de clientes</h2>
+
+        <p>
+            <a href="/adm/adm-cliente-novo" class="btn btn-success"> Novo</a>
+        </p>
+        <table class="table">
+            <tr>
+                <th>Nome</th>
+                <th>Nome de Usuário</th>
+                <th>E-mail</th>
+                <th>CPF</th>
+                <th>Imagem de Perfil</th>
+                <th>Status</th>
+                <th>Ações</th>
+            </tr>
+            <tr>
+                <td>Nome</td>
+                <td>Nome de Usuário</td>
+                <td>E-mail</td>
+                <td>CPF</td>
+                <td>
+                    <img alt="imagem de perfil" id="img-preview" src="../imagem/img_login.png"
+                        style="max-width:100px; max-height:100px;" />
+                </td>
+                <td>Status</td>
+                <td>
+                    <a href="/adm/adm-cliente-edit" class="btn btn-warning"> Editar</a>
+                    <a href="/adm/adm-cliente-list" class="btn btn-info"> Detalhes</a>
+                    <a href="/adm/adm-cliente-del" class="btn btn-danger"> Excluir</a>
+                </td>
+            </tr>
+
+        </table>
+        <hr />
+            <%- include("../partials/footer-adm") -%>
+    </div>
+</body>
+
+</html>
